@@ -5,7 +5,7 @@ public class Test {
 
 		StringBuffer fileName = new StringBuffer("D:CR_uploadedDoc/853/null");
 		System.out.println(fileName.delete(fileName.length() - 4,
-				fileName.length()));
+				fileName.length())+"________________");
 
 	
 
