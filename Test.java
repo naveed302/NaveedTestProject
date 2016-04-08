@@ -7,7 +7,7 @@ public class Test {
 		System.out.println(fileName.delete(fileName.length() - 4,
 				fileName.length()));
 
-		System.out.println("New Changes in Test.java class");
+	
 
 	}
 }
