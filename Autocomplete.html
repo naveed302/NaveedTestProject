@@ -1,0 +1,65 @@
+ <head>
+    <!-- Load jQuery, jQuery UI and jQuery ui styles from jQuery website -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Source our javascript file with the jQUERY code -->
+    <style type="text/css">
+    h1 {
+		  font-family: Helvetica;
+  		/* font-weight: 100; */
+	}
+	body {
+	  color:#333;
+	text-align:center;
+	}
+    </style>
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+    
+    var data = [
+                "Apple",
+                "Orange",
+                "Pineapple",
+                "Strawberry",
+                "Mango"
+                	];
+                
+              /*  jQuery ready function. Specify a function to execute when the DOM is fully loaded.  */
+              $(document).ready(
+                
+                /* This is the function that will get executed after the DOM is fully loaded */
+                function () {
+                  
+                /* binding the text box with the jQuery Auto complete function. */
+                  $( "#fruits" ).autocomplete({
+                    /*Source refers to the list of fruits that are available in the auto complete list. */
+                    source:data,
+                    /* auto focus true means, the first item in the auto complete list is selected by default. therefore when the user hits enter,
+                    it will be loaded in the textbox */
+                    autoFocus: true ,
+
+                  });
+                }
+
+              );
+    
+    </script>
+  </head>
+  <body>
+    <h1>JQuery Auto complete example</h1>
+    <form>
+    <!-- textbox and label that are attached with the autocomplete -->
+      <!-- <label for="fruits">Fruit <input type="text" name="fruits" id="fruits" /></label> -->
+      
+      <label for="fruits">Fruit <textarea name="fruits" id="fruits" ></textarea></label>
+      
+      
+    </form>
+  </body>
+</html>
